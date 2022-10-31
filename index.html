@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Libros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <style>
+        .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        }
+
+        @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+        }
+
+        .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+        }
+
+        .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+        }
+
+        .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        }
+        h3{
+          margin-left: 10%;
+          font-family: 'Times New Roman', Times, serif;
+          color: rgb(51, 51, 180);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+        <a href="#" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            <span class="fs-4">Ventlib</span>
+        </a>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0"  role="search">
+            <input type="search" class="form-control" placeholder="Busca tu libro acá!" aria-label="Search">
+        </form>
+        </div>
+    </header>
+    <nav class="py-2 bg-light border-bottom" style="text-align: center">
+        <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Lo más vendido | </a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2"> Lo más buscado | </a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2"> Novedades | </a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2"> Ficción | </a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2"> Infantil | </a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2"> Juvenil | </a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2"> Ofertas Flash | </a></li>
+        </ul>
+        <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Iniciar Sesión</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Registrate</a></li>
+        </ul>
+        </div>
+    </nav><br>
+    
+    <main>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                    <img src="img/img1.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        
+                <div class="container">
+                  <div class="carousel-caption">
+                    <img src="img/img2.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        
+                <div class="container">
+                  <div class="carousel-caption text-end">
+                    <img src="img/img3.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+    </main>
+    <hr>
+    <h3 class="lmv">Lo más vendido</h3>
+    <div class="album py-5 bg-light">
+      <div class="container">
+  
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <img src="img/lib1.jpg" width="60%" height="100%" style="display: block;margin:auto;"><br>
+                <p class="card-text">El Mal Acecha</p>
+                <p class="card-text">Cifuentes, Rosa María</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/47.94</span> &nbsp;&nbsp;&nbsp;<del> S/79.90</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Resumen</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                  </div>
+                  <small class="text-muted">1 minute</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/lib2.jpg" width="60%" height="100%" style="display: block;margin:auto;">
+              <div class="card-body">
+                <p class="card-text">Habilidades blandas a la vena</p>
+                <p class="card-text">Fischman, David</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/47.94</span> &nbsp;&nbsp;&nbsp;<del> S/79.90</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Resumen</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                  </div>
+                  <small class="text-muted">1 minute</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/lib3.jpg" width="60%" height="100%" style="display: block;margin:auto;">
+              <div class="card-body">
+                <p class="card-text">Romper el circulo</p>
+                <p class="card-text">Hoover, Colleen</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/47.94</span> &nbsp;&nbsp;&nbsp;<del> S/79.90</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Resumen</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                  </div>
+                  <small class="text-muted">1 minute</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/lib4.jpg" width="60%" height="100%" style="display: block;margin:auto;">
+              <div class="card-body">
+                <p class="card-text">Boluevard</p>
+                <p class="card-text">Salvador, Flor M.</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/41.40</span> &nbsp;&nbsp;&nbsp;<del> S/69.00</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">10 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/lib5.jpg" width="60%" height="100%" style="display: block;margin:auto;">
+              <div class="card-body">
+                <p class="card-text">Código dinero. 4 pasos para Hac...</p>
+                <p class="card-text">Arens, Cristian</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/35.99</span> &nbsp;&nbsp;&nbsp;<del> S/59.99</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Resumen</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                  </div>
+                  <small class="text-muted">3 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/lib6.jpg" width="60%" height="100%" style="display: block;margin:auto;">
+              <div class="card-body">
+                <p class="card-text">HeartStopper</p>
+                <p class="card-text">Oseman, Alice</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/41.40</span> &nbsp;&nbsp;&nbsp;<del> S/69.00</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Resumen</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                  </div>
+                  <small class="text-muted">5 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/img13.jpg" width="60%" height="100%" style="display: block;margin:auto;">
+              <div class="card-body">
+                <p class="card-text">De animales a dioses</p>
+                <p class="card-text">Harari, Yuval Noah</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/59.40</span> &nbsp;&nbsp;&nbsp;<del> S/99.00</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Resumen</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/img14.jpg" width="60%" height="100%" style="display: block;margin:auto;">
+              <div class="card-body">
+                <p class="card-text">Las trampas del miedo</p>
+                <p class="card-text">Habid, Daniel</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/51.00</span> &nbsp;&nbsp;&nbsp;<del> S/85.00</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Resumen</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                  </div>
+                  <small class="text-muted">20 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <h3>Lo más buscado</h3>
+    <div class="album py-5 bg-light">
+      <div class="container">
+        
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/lib7.jpg" width="60%" height="50%" style="display: block;margin:auto;">  
+              <div class="card-body">
+                <p class="card-text">Juego de Tronos. Cancion de hie...</p>
+                <p class="card-text">Martin, George R. R.</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/77.40</span> &nbsp;&nbsp;&nbsp;<del> S/129.90</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Resumen</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                  </div>
+                  <small class="text-muted">2 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/lib8.jpg" width="60%" height="100%" style="display: block;margin:auto;">  
+              <div class="card-body">
+                <p class="card-text">DIARIO DE GREG 1. UN PRINGAO TOT...</p>
+                <p class="card-text">Kinney, Jeft</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/41.40</span> &nbsp;&nbsp;&nbsp;<del> S/69.00</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/lib9.jpg" width="60%" height="100%" style="display: block;margin:auto;">  
+              <div class="card-body">
+                <p class="card-text">LAS VENTAJAS DE SER INVISIBLE</p>
+                <p class="card-text">Chbosky, Stephen</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/41.40</span> &nbsp;&nbsp;&nbsp;<del> S/69.00</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Resumen</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/lib10.jpg" width="60%" height="100%" style="display: block;margin:auto;">
+              <div class="card-body">
+                <p class="card-text">SAPIENS: DE ANIMALES A DIOSES</p>
+                <p class="card-text">Horari, Yuval Noah</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/59.40</span> &nbsp;&nbsp;&nbsp;<del> S/99.00</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Resumen</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/lib11.jpeg" width="60%" height="100%" style="display: block;margin:auto;">
+              <div class="card-body">
+                <p class="card-text">MBA PERSONAL</p>
+                <p class="card-text">Kaufman, Josh</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/59.40</span> &nbsp;&nbsp;&nbsp;<del> S/99.00</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Resumen</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/lib12.jpg" width="60%" height="100%" style="display: block;margin:auto;">
+  
+              <div class="card-body">
+                <p class="card-text">Hasta que nos quedemos sin estre...</p>
+                <p class="card-text">Rubiales, Inma</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/59.40</span> &nbsp;&nbsp;&nbsp;<del> S/99.00</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Resumen</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/lib13.jpg" width="60%" height="100%" style="display: block;margin:auto;">
+  
+              <div class="card-body">
+                <p class="card-text">Nosotros en la Luna</p>
+                <p class="card-text">Kellen, Alice</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/35.94</span> &nbsp;&nbsp;&nbsp;<del> S/99.00</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Resumen</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/lib14.jpg" width="60%" height="100%" style="display: block;margin:auto;">
+  
+              <div class="card-body">
+                <p class="card-text">La Voz de Tu Alma</p>
+                <p class="card-text">García Calvo, Laín</p>
+                <p class="card-text" style="color: 	#8e1919;"><span class="text-primary">S/51.00</span> &nbsp;&nbsp;&nbsp;<del> S/85.00</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Resumen</button>&nbsp;
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><hr>
+    <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Nosotros</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Nuestras Tiendas</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Proximos Lanzamientos</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Suscribete para mantenerte al tanto</h5>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Correo Electronico">
+                  <button class="btn btn-primary" type="button">Suscribete</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2022 Company, Inc. Todos los derechos reservados.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+
+</body>
+</html>
